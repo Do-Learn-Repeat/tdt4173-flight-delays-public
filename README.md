@@ -1,14 +1,13 @@
 # Predicting Flight Delays Using Weather Data and Machine Learning
-
 ##### Project source code for the NTNU course TDT4173 - Machine Learning
 
 The project was conducted by
 
-- [Magnus Tidemannn](https://github.com/Magnuti)
-- [Jonas Klepper Rodningen](https://github.com/jonasrodningen)
-- [Jørgen Hanssen](https://github.com/jorgenhanssen)
+* [Magnus Tidemannn](https://github.com/Magnuti)
+* [Jonas Klepper Rodningen](https://github.com/jonasrodningen)
+* [Jørgen Hanssen](https://github.com/jorgenhanssen)
 
-You can check out our [webpage](https://ntnuflightdelays.com) for an overview and an interactive demo.
+You can check out our [webpage](https://ntnuflightdelays.com) for an overview and an interactive demo. 
 
 ## Setup
 
@@ -20,6 +19,34 @@ make setup
 
 in the `root` directory of the project.
 
+## Project Structure
+```
+.
+│
+└───data
+│   │  
+│   └───clean
+│   │   Contains the merged dataset
+│   │  
+│   └───processed
+│   │   Contains the processed data
+│   │  
+│   └───raw
+│       Contains the raw data
+│   
+└───models
+│   Saved models during testing
+│
+└───notebooks
+│   Notebooks related to the project
+│
+└───src
+│   Python source code and scripts
+│
+└───visualizations
+    Data and model visualizations
+```
+
 ## Obtaining and Processing Data
 
 We have provided a handful of flights and weather data between 2016 and 2019 as well as a complete trainingset for the data.
@@ -27,7 +54,7 @@ However, data can be obtained and processed in the following manner.
 
 ### Weather Data
 
-To obtain weather data, navigate to `src/data/weather` and run the `scraper.py` script.
+To obtain weather data, navigate to `src/data/weather` and run the `scraper.py` script. 
 Then, run the `processor.py` to process that raw data.
 
 ### Flighs Records
@@ -52,3 +79,5 @@ The run function inside each model allows for expirementation in the model's dom
 ### Running the Pipeline
 
 To run the pipeline, simply run the `main.py` inside the pipeline folder. To run a specific model playground, uncomment it from the main function.
+
+
